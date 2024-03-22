@@ -1,0 +1,14 @@
+doctype html
+html(lang="de")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body 
+    h1=petCategory
+    if Array.isArray(petCategoryPets)&&petCategoryPets.length > 0
+      ul
+      each pet in petCategoryPets
+        li
+          a(href=`/animals/${petCategory}/${pet.name}`)=pet.name
+      

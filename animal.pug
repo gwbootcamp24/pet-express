@@ -1,0 +1,15 @@
+doctype html
+html(lang="de")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body 
+    h1=pet.name
+    img(src=pet.url, style=`max-width: 500px;`)
+
+    ul
+      li=`age: ${pet.age}`
+      li=`breed: ${pet.breed}`
+      li=`description: ${pet.description}`
+    a(href="/")="Home"
